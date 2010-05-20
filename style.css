@@ -1,0 +1,12 @@
+/* @override http://localhost/ctshryock.github.com/style.css */
+
+div {
+    text-align:center;
+}
+img {
+    border:3px solid #ccc;
+}
+
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
