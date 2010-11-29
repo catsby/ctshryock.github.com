@@ -4,5 +4,18 @@ title: ctshryock @ github
 image: self.JPG
 ---
 
-<img src="self.JPG" width="500"  /><br />
+<img src = "self.JPG" width="500"  /><br />
 <blockquote>I think having an @aol address is like having a 2 dollar bill. They're out there, you've had one before, but they always make you pause when you see one in the wild</blockquote>
+
+
+
+<div>
+    <ul>
+        {% for post in site.posts %}
+        <dl>
+            <dt><img width="50" src="{{page.image}}" /></dt>
+            <dd><a href="{{post.url}}">{{post.title}}</a><br />{{ post.date | date_to_string }}</dd>
+        </dl>
+        {% endfor %}
+    </ul>
+</div>
