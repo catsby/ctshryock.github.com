@@ -4,8 +4,9 @@ title: ctshryock @ github
 image: self.JPG
 ---
 
-<img src = "self.JPG" width="500"  /><br />
-<blockquote>I think having an @aol address is like having a 2 dollar bill. They're out there, you've had one before, but they always make you pause when you see one in the wild</blockquote>
+<img src = "self.JPG" width="500"  />
+
+> I think having an @aol address is like having a 2 dollar bill. They're out there, you've had one before, but they always make you pause when you see one in the wild
 
 
 
