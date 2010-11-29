@@ -14,7 +14,7 @@ image: magic_tree.JPG
     {% for post in site.posts %}
     <ul>
         <li>
-            <img width="50" src="/images/{{post.image}}" /><a href="{{post.url}}">{{post.title}}</a><br />{{ post.date | date_to_string }}
+            <img width="50" src="/images/{{post.image}}" /><a href="{{post.url}}">{{post.title}}</a>
         </li>
     </ul>
     {% endfor %}
