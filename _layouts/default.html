@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+    <head>
+        <title>ctshryock.github.com</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <div>
+            {{ content }}
+        </div>
+        <div>
+            <ul>
+                {% for post in site.posts %}
+                <dl>
+                    <dt><img width="50" src="{{page.image}}" /></dt>
+                    <dd><a href="{{post.url}}">{{post.title}}</a><br />{{ post.date | date_to_string }}</dd>
+                </dl>
+                {% endfor %}
+            </ul>
+        </div>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-5272456-5']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+        
+    </body>    
+</html>
