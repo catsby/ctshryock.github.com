@@ -1,6 +1,5 @@
 ---
 layout: default
-title: ctshryock @ github
 image: magic_tree.JPG
 ---
 
