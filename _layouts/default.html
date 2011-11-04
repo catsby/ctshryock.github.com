@@ -6,11 +6,26 @@
                 : {{page.title}}
             {% endif %}
         </title>
-        <link rel="stylesheet" href="/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+        <style>
+          .container {
+            text-align:center;
+          }
+        </style>
     </head>
     <body>
-        <div id="content">
+        <div class="container">
+          <h2> November 2011 </h2>
+          <div class="content">
             {{ content }}
+          </div>
+          <div>
+            <ul class="media-grid">
+            {% for post in site.posts reversed %}
+              <li><img class="thumbnail" width="90" src="{{site.url}}/images/{{post.image}}" title="{{post.name}}" />
+            {% endfor %}
+            </ul>
+          </div>
         </div>
         <script type="text/javascript">
 

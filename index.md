@@ -1,20 +1,10 @@
 ---
 layout: default
 image: magic_tree.JPG
+name: magic
 ---
 
-##home
 
-<img id="main-image" src="/images/{{page.image}}" width="500"  />
+{% assign first_post = site.posts.last %}
+<img src="{{site.url}}/images/{{ first_post.image }}" title="{{ site.post.first.name }}" />
 
-> Rudolf is a terrible story to tell kids.  This poor reindeer tries to change himself to fit in but he fails, and everyone still hates and mocks the guy.  Then all of a sudden they're in a tight spot and he's useful so they all love him?
-
-<ul>
-    {% for post in site.posts %}
-    <ul>
-        <li>
-            <img width="50" src="/images/{{post.image}}" /><a href="{{post.url}}">{{post.title}}</a>
-        </li>
-    </ul>
-    {% endfor %}
-</ul>

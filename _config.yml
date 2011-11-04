@@ -1,1 +1,3 @@
-auto: true
+markdown: redcarpet
+exclude: ['public']
+url: http://ctshryock.github.com/
